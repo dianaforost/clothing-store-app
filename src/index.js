@@ -9,11 +9,9 @@ import { store } from './redux/store';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      {/* <PersistGate loading={<h1>Loading...</h1>} persistor={persistor}> */}
       <BrowserRouter basename="clothing-store-app">
         <App />
       </BrowserRouter>
-      {/* </PersistGate> */}
     </Provider>
   </React.StrictMode>
 );
