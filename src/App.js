@@ -8,16 +8,26 @@ import { getCart } from 'redux/cart/operations';
 
 import GlobalStyle from './GlobalStyle.jsx';
 
-const MainPage = lazy(() => import("./pages/MainPage/MainPage.jsx"));
-const CatalogPage = lazy(() => import("./pages/CatalogPage/CatalogPage.jsx"));
-const ProductDetailsPage = lazy(() => import("./pages/ProductDetailsPage/ProductDetailsPage.jsx"));
-const CartPage = lazy(() => import("./pages/CartPage/CartPage.jsx"));
-const OrderPage = lazy(() => import("./pages/OrderPage/OrderPage.jsx"));
-const AboutPage = lazy(() => import("./pages/AboutPage/AboutPage.jsx"));
-const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage.jsx"));
-const SearchedProductPage = lazy(() => import("./pages/SearchedProductPage/SearchedProductPage.jsx"));
-const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage.jsx"));
-const UnsubscribePage = lazy(() => import("./pages/UnsubscribePage/UnsubscribePage.jsx"));
+const MainPage = lazy(() => import('./pages/MainPage/MainPage.jsx'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage/CatalogPage.jsx'));
+const ProductDetailsPage = lazy(() =>
+  import('./pages/ProductDetailsPage/ProductDetailsPage.jsx')
+);
+const CartPage = lazy(() => import('./pages/CartPage/CartPage.jsx'));
+const OrderPage = lazy(() => import('./pages/OrderPage/OrderPage.jsx'));
+const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage.jsx'));
+const NotFoundPage = lazy(() =>
+  import('./pages/NotFoundPage/NotFoundPage.jsx')
+);
+const SearchedProductPage = lazy(() =>
+  import('./pages/SearchedProductPage/SearchedProductPage.jsx')
+);
+const ContactsPage = lazy(() =>
+  import('./pages/ContactsPage/ContactsPage.jsx')
+);
+const UnsubscribePage = lazy(() =>
+  import('./pages/UnsubscribePage/UnsubscribePage.jsx')
+);
 
 function App() {
   const location = useLocation();
